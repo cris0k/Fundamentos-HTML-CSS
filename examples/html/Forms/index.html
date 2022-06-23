@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Form attributes -->
+    <form action="/register" novalidate method="post">
+        <div>
+        <label for="name">Name</label> <!-- mejor navegacion con tab y hace foco en el input -->
+        <input required type="text" id="name" name="name" placeholder="Ingrese su nombre">
+
+        </div>
+        <div>
+        <label for="email">Email</label>
+        <input required type="email" name="email" id="email" placeholder="Email">
+        </div>
+        <div>
+            <label for="tel">Phone Number</label>
+            <input 
+            type="tel"  
+            id="tel" 
+            placeholder="Number"
+            pattern="[0-9]+"
+            >
+            </div>
+        <div>
+            <label for="age"> Age</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input required type="password" id="password" name="password" >
+        </div>
+        <div>
+            <input type="submit" value="Register"> <!-- el value nos cambia el nombre del boton submit -->
+            <button type="button">More info</button>
+        </div>
+        <hr>
+        <fieldset>
+            <legend> Fav Programming Lang</legend>
+        <!-- Con radio solo se elige una opcion -->
+            <label for="js">Javascript</label>
+            <input type="radio" name="fav" id="js" value="js">
+
+            <label for="python" >python</label>
+            <input type="radio"name="fav" id="python" value="python">
+
+            <label for="net" >.NET</label>
+            <input type="radio" name="fav" id="net" value="net">
+        </fieldset>
+        <fieldset>
+            <legend> Skills</legend>
+            <!-- Con checkbox se pueden elegir varias opciones -->
+
+            <label for="skill_js">Javascript</label>
+            <input type="checkbox" name="skill_js" id="skill_js">
+
+            <label for="skill_python" >python</label>
+            <input type="checkbox" name="skill_python" id="skill_python">
+
+            <label for="skill_net" >.NET</label>
+            <input type="checkbox" name="skill_net" id="skill_net">
+        </fieldset>
+        <hr>
+        <button type="button">Submit</button>
+    </form>
+
+
+    <!-- Input + Lable -->
+
+    <!-- Validadtion -->
+
+</body>
+</html>
