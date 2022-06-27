@@ -1,0 +1,30 @@
+h3{
+    color:brown;
+}
+#myHeader{
+    color: black;
+}
+.title2 {
+    color: rgb(132,132,4);
+}
+/* important code */
+h2{
+    color: purple !important;
+}
+
+section header h4 {
+    font-style: italic;
+}
+.content h4{
+    font-style: normal;
+}
+/* Selectores */
+
+.list > li {
+    font-style: italic;
+    text-transform: uppercase;
+    background-color: blue;
+}
+.item, .button {
+    text-transform: uppercase;
+}
