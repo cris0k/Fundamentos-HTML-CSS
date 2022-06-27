@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sem - form</title>
+</head>
+<body>
+  <!-- Semantic -->
+  <main class="contenido-principal">
+    <section class="contenido-seccion">
+      <ol>
+        <li class="elemeto-lista">List item</li>
+        <li class="elemeto-lista">List item</li>
+        <li class="elemeto-lista">List item</li>
+        <li class="elemeto-lista">List item</li>
+      </ol>
+    </section>
+    <section class="contenido-seccion">
+      <form class="form">
+        <label for="description">description</label>
+        <input required type="text" id="description" name="description">
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+    <footer class="contenido-pie">
+      <a class="link" href="https://google.com" rel="noopener noreferral">Google.com</a>
+    </footer>
+  </main>
+
+  <!--
+    Form action: "/register" method: "POST"
+
+    Todos los campos requeridos que se puedan mandar con el formulario
+    el twitter username tiene que tener este patrón -> ^@[^\s]+
+    Ej: @keepcoding_
+  -->
+  <form action="/register" novalidate method="post">
+    <div>
+      <label for="name">name</label>
+      <input required type="text" id="name" name="name" placeholder="Write your name here">
+    </div>
+    <div>
+      <label for="surname">surname</label>
+      <input required type="text" id="surname" name="surname" placeholder="Write your surname here">
+    </div>
+    <div>
+      <label for="phone">phone</label>
+      <input required type="tel" id="phone" placeholder="Phone Number" maxlength="9" pattern="[0-9]+">
+    </div>
+    <div>
+      <label for="email">email</label>
+      <input required type="email" name="email" id="email" placeholder="Email">
+    </div>
+    <div>
+      <label for="twitter">Twitter account</label>
+      <input required type="text" id="twitter" name="twitter" value="@" pattern="^@[^\s]+">
+    </div>
+    <div>
+      <label for="password">password</label>
+      <input required type="password" id="password" name="password">
+    </div>
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
